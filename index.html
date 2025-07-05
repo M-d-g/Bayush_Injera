@@ -1,49 +1,67 @@
 <!DOCTYPE html>
-<html lang="am">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ባዩሽ እንጀራ</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            background-color: #fffaf0;
-            color: #333;
-            text-align: center;
-            padding: 2rem;
-        }
-        header {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        .qr {
-            margin-top: 2rem;
-        }
-        img {
-            width: 200px;
-            height: auto;
-        }
-        footer {
-            margin-top: 3rem;
-            font-size: 0.9rem;
-            color: #777;
-        }
-    </style>
+    <title>Bayush Ingera -ባዩሽ እንጀራ </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
-    <header>እንኳን ወደ "ባዩሽ እንጀራ" ድርጅት በደህና መጡ</header>
-
-    <p>የተፈጥሮ እና ተስማሚ እንጀራ ከባዩሽ!</p>
-
-    <div class="qr">
-        <p>የድርጅቱን መረጃ ለማግኘት QR ኮዱን ያስሱ:</p>
-        <a href="Bayush_Injera_QR.png" download>
-            <img src="Bayush_Injera_QR.png" alt="QR Code for Bayush Injera">
-        </a>
+    <script src="js/scripts.js" defer></script>
+    <!-- Header with logo -->
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Bayush Ingera Logo" class="logo-img">
+            <div class="logo-text">Bayush Ingera</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="video-hero">
+    <video autoplay muted loop id="hero-video">
+        <source src="videos/showcase.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="video-overlay">
+        <h1>QUALITY IS OUR BRAND</h1>
+        <a href="#contact" class="btn">Get Started</a>
     </div>
-
+     </section>
+    
+    <!-- Footer -->
     <footer>
-        &copy; 2025 ባዩሽ እንጀራ. መብት ሁሉ የተጠበቀ ነው።
+        <div class="footer-content">
+            <div class="footer-column">
+                <img src="images/logo.png" alt="Bayush Ingera Logo" class="footer-logo">
+                <p>Providing exceptional services since 2025.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@bayushingera.com</p>
+                <p>Phone: +251985131469</p>
+                <p>Hawassa, Ethiopia</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Bayush Ingera. All rights reserved.
+        </div>
     </footer>
 </body>
 </html>
